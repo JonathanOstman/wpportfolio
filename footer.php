@@ -1,21 +1,17 @@
-<?php if(!is_single('lampswitch' + 'pong-game')) : ?>
 <footer>&copy; <?php echo Date('Y'); ?> - <?php bloginfo('name'); ?></footer>
 <div class="link">
   <?php $loop = new WP_Query( array( 'post_type' => 'social', 'orderby' => 'post_id', 'order' => 'ASC' ) ); ?>
   <?php while( $loop->have_posts() ) : $loop->the_post(); ?>
 
-  <a href="<?php the_field('address')?>"><i class="fa fa-<?php the_field('social_media') ?>" aria-hidden="true"></i></a>
+  <a href="<?php the_field('address')?>"><i class="fa fa-<?php the_field('social_media') ?> social" aria-hidden="true"></i></a>
 
   <?php endwhile; wp_reset_query(); ?>
 </div>
-<?php endif;?>
 
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
 <?php wp_footer(); ?>
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/bootstrap.min.js"></script>
-<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/tennis-game.js"></script>
 <!--Google analytics-->
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

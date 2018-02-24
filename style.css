@@ -113,7 +113,7 @@ nav a:hover {
   text-align: center;
   padding: 50px;
 }
-.fa {
+.social {
   font-size: 40px;
   color: #000;
   margin: 20px 5px 0 5px;
@@ -176,7 +176,27 @@ footer {
     font-size: 18px;
    }
 }
-
+article {
+  text-align: center;
+  background: #ecf0f1;
+  margin-bottom: 30px;
+}
+article h2 {
+  margin-top: 30px;
+  font-size: 40px;
+}
+article img {
+  height: 500px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+article p {
+  font-size: 30px;
+}
+article a {
+  font-size: 30px;
+}
 
 
 
